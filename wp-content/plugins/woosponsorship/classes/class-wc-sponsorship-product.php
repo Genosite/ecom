@@ -22,7 +22,7 @@ class WC_Sponsorship_Product {
 			add_filter( 'product_type_selector', array( &$this, 'add_product_type' ), 10, 3 );
 		} else {
 			add_action( 'wp_head', array( &$this, 'product_frontend_styling' ) );
-			//add_action( 'woocommerce_sponsorship-project_add_to_cart', array( &$this, 'add_sponsorship_project_to_cart' ) );
+			add_action( 'woocommerce_sponsorship-project_add_to_cart', array( &$this, 'add_sponsorship_project_to_cart' ) );
 			add_action( 'woocommerce_before_add_to_cart_form', array( &$this, 'before_add_to_cart' ) );
 			add_action( 'woocommerce_after_add_to_cart_form', array( &$this, 'after_add_to_cart' ) );
 			
@@ -387,6 +387,7 @@ class WC_Sponsorship_Product {
 				$sponsorship = array_merge( $existing, $sponsorship );
 			}
 			update_post_meta( $post->ID, '_sponsorship', $sponsorship );
+			update_post_meta( $post->ID, '_virtual', "yes" );
 		}
 
 		// process levels (insert children posts, etc)
@@ -427,7 +428,7 @@ class WC_Sponsorship_Product {
 
 					// Update post meta
 					update_post_meta( $level_id, '_price', esc_attr( $level[ 'amount' ] ) );
-					update_post_meta( $level_id, '_stock', 1 );
+					update_post_meta( $level_id, '_stock', -1 );
 					update_post_meta( $level_id, '_virtual', 'yes' );
 					update_post_meta( $level_id, '_downloadable', 'no' );
 				}
@@ -647,7 +648,7 @@ class WC_Sponsorship_Product {
 				$level_product = new WC_Product_Variation( $level->ID );
 				$level_data = get_post_custom( $level->ID );
 				?>
-				<form id="level-<?php echo $level->ID; ?>-form" enctype="multipart/form-data" method="post" class="cart" action="<?php echo $level_product->add_to_cart_url(); ?>">
+				<form id="level-<?php echo $level->ID; ?>-form" enctype="multipart/form-data" method="post" class="cart" action="<?php echo $level_product->add_to_cart_url($level->ID); ?>">
 					<a class="sp-level" rel="<?php echo $level->ID; ?>">
 						<div class="sp-level-title">
 							<?php echo get_the_title( $level->ID ); ?>
