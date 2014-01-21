@@ -1,1 +1,0 @@
-The Retailer is a responsive, super-mobile-friendly theme for WordPress and WooCommerce.
