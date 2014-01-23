@@ -111,8 +111,8 @@ global $theretailer_theme_options;
                 </a>
                 &nbsp;
             </div>
-            <div class="grid_9">
-                <div <?php global $post; if ($post->ID == 48) echo 'style="display:none;'; ?> class="menus_wrapper" <?php if ( ($theretailer_theme_options['catalog_mode']) && ($theretailer_theme_options['catalog_mode'] == 1) ) { ?>style="margin:0"<?php } ?>>
+            <div class="grid_9" <?php global $post; if ($post->ID == 48) echo 'style="display:none;'; ?>>
+                <div  class="menus_wrapper" <?php if ( ($theretailer_theme_options['catalog_mode']) && ($theretailer_theme_options['catalog_mode'] == 1) ) { ?>style="margin:0"<?php } ?>>
                     <div class="gbtr_first_menu">
                         <div class="gbtr_first_menu_inside">
                             
@@ -262,7 +262,7 @@ global $theretailer_theme_options;
                     
                     <!---->
                     
-                    <div class="gbtr_dynamic_shopping_bag">
+                    <div class="gbtr_dynamic_shopping_bag" <?php global $post; if ($post->ID == 48) echo 'style="display:none;'; ?>>
                 
                         <div class="gbtr_little_shopping_bag_wrapper">
                             <div class="gbtr_little_shopping_bag">
