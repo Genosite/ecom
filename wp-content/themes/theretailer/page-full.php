@@ -18,7 +18,7 @@ Template Name: 100% Width
 
     <?php endwhile; // end of the loop. ?>
 
-<?php get_template_part("light_footer"); ?>
+
 <?php get_template_part("dark_footer"); ?>
 
 <?php get_footer(); ?>
