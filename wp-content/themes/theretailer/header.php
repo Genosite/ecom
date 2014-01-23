@@ -111,8 +111,10 @@ global $theretailer_theme_options;
                 </a>
                 &nbsp;
             </div>
-            <div class="grid_9" <?php global $post; if ($post->ID == 48) echo 'style="display:none;'; ?>>
-                <div  class="menus_wrapper" <?php if ( ($theretailer_theme_options['catalog_mode']) && ($theretailer_theme_options['catalog_mode'] == 1) ) { ?>style="margin:0"<?php } ?>>
+            <div class="grid_9" >
+            <?php global $post; if ($post->ID != 48) { ?>
+            
+                <div class="menus_wrapper" <?php if ( ($theretailer_theme_options['catalog_mode']) && ($theretailer_theme_options['catalog_mode'] == 1) ) { ?>style="margin:0"<?php } ?>>
                     <div class="gbtr_first_menu">
                         <div class="gbtr_first_menu_inside">
                             
@@ -315,6 +317,7 @@ global $theretailer_theme_options;
                     
                     </div>
                     
+                    <?php global $post; if ($post->ID != 48) { ?>
                     <script type="text/javascript">// <![CDATA[
 					jQuery(function(){
 					  jQuery(".cart_list_product_title a").each(function(i){
@@ -326,7 +329,7 @@ global $theretailer_theme_options;
 					  });
 					});
 					// ]]></script>
-                    
+                    <?php } ?>
                     <!---->
                     
                     <?php } ?>
@@ -337,7 +340,12 @@ global $theretailer_theme_options;
                 
                 </div>
                 
-                
+            <?php }; if ($post->ID == 48) { ?>
+                <img style="float:right;" src="<?php echo get_template_directory_uri(); ?>/images/menu.jpg" />
+                <img style="float:right;" src="<?php echo get_template_directory_uri(); ?>/images/menu.jpg" />
+                <img style="float:right;" src="<?php echo get_template_directory_uri(); ?>/images/menu.jpg" />
+                <img style="float:right;" src="<?php echo get_template_directory_uri(); ?>/images/menu.jpg" />
+            <?php }; ?>
             </div>
             
         </div>
