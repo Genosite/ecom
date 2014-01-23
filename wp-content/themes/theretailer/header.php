@@ -112,7 +112,7 @@ global $theretailer_theme_options;
                 &nbsp;
             </div>
             <div class="grid_9">
-                <div class="menus_wrapper" <?php if ( ($theretailer_theme_options['catalog_mode']) && ($theretailer_theme_options['catalog_mode'] == 1) ) { ?>style="margin:0"<?php } ?>>
+                <div <?php global $post; if ($post->ID == 48) echo 'style="display:none;'; ?> class="menus_wrapper" <?php if ( ($theretailer_theme_options['catalog_mode']) && ($theretailer_theme_options['catalog_mode'] == 1) ) { ?>style="margin:0"<?php } ?>>
                     <div class="gbtr_first_menu">
                         <div class="gbtr_first_menu_inside">
                             
