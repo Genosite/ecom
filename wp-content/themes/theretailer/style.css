@@ -10022,3 +10022,10 @@ footer.entry-meta .comments-link {
 	margin-top: 6px;
 	margin-left: 20px;
 }
+
+.title_head {
+	font-size: 36px;
+	font-family: 'please_write_me_a_song' !important;
+	text-align: center;
+	margin-bottom: 15px;
+}

@@ -6,7 +6,7 @@
 	list-style:none;
 	float:left;
 	margin:0px 0px 20px 0px;
-	padding:0px;
+	padding:0px 0px 20px 0px !important;
 	width:100%;
 }
 .mc_clientsList li {
