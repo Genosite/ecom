@@ -5,7 +5,6 @@ Template Name: 100% Width
 ?>
 
 <?php get_header(); ?>
-
 	<?php while ( have_posts() ) : the_post(); ?>
         
         <div class="page_full_width">

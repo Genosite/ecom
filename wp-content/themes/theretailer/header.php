@@ -341,10 +341,10 @@ global $theretailer_theme_options;
                 </div>
                 
             <?php }; if ($post->ID == 48) { ?>
-                <img style="float:right;" src="<?php echo get_template_directory_uri(); ?>/images/menu.jpg" />
-                <img style="float:right;" src="<?php echo get_template_directory_uri(); ?>/images/menu.jpg" />
-                <img style="float:right;" src="<?php echo get_template_directory_uri(); ?>/images/menu.jpg" />
-                <img style="float:right;" src="<?php echo get_template_directory_uri(); ?>/images/menu.jpg" />
+                <a href="<?php echo get_permalink('95'); ?>"><img class="menu_icon" src="<?php echo get_template_directory_uri(); ?>/images/mecenat.png" /></a>
+                <a href="<?php echo get_permalink('91'); ?>"><img class="menu_icon" src="<?php echo get_template_directory_uri(); ?>/images/editeurs.png" /></a>
+                <a href="<?php echo get_permalink('83'); ?>"><img class="menu_icon" src="<?php echo get_template_directory_uri(); ?>/images/auteurs.png" /></a>
+                <a href="<?php echo get_permalink('88'); ?>"><img class="menu_icon" src="<?php echo get_template_directory_uri(); ?>/images/lecteurs.png" /></a>
             <?php }; ?>
             </div>
             

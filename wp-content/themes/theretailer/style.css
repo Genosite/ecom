@@ -691,7 +691,7 @@ blockquote:before {
 /* UI */
 
 #global_wrapper {
-	background-color:#fff;
+	background-color:#f4f4f4;
 }
 
 .big_arrow_left:hover{
@@ -9981,3 +9981,45 @@ footer.entry-meta .comments-link {
 /*****************************************************************************************************/
 /******************************************* /Media Queries ******************************************/
 /*****************************************************************************************************/
+.menu_icon {
+	float: right;
+	margin-left: 10px;
+}
+
+.gbtr_logo{
+	margin-top: 18px;
+}
+
+.title_header {
+	width: 938px;
+	border: solid #999ea0 1px;
+	background-color: #fff;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding-top: 5px;
+}
+
+.title_header span {
+	
+	font-size: 28px;
+	font-family: 'please_write_me_a_song';
+}
+
+@font-face {
+    font-family: 'please_write_me_a_song';
+    src: url('font/please_write_me_a_song-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.fb {
+	float: left;
+	margin-top: 6px;
+}
+
+.tw {
+	float: left;
+	margin-top: 6px;
+	margin-left: 20px;
+}

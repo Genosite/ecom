@@ -16,13 +16,13 @@ global $theretailer_theme_options;
     
         <div class="gbtr_dark_footer_no_widgets">
             <div class="container_12">
-                <div class="grid_12">
-                    <h3><strong>Dark Footer</strong> - Widgetized Area. <a href="<?php echo site_url(); ?>/wp-admin/widgets.php"><strong>Start Adding Widgets</strong></a>.</h3>
+                <div class="grid_3">
+                    <img class="logo_footer" src="<?php echo get_template_directory_uri(); ?>/images/logo_footer.png" />
+                    </div>
+                <div class="grid_9">
+                    <a href="" target="_blank"><img class="fb" src="<?php echo get_template_directory_uri(); ?>/images/fb.png" /></a>
+                    <a href="" target="_blank"><img class="tw" src="<?php echo get_template_directory_uri(); ?>/images/tw.png" /></a>
                 </div>
-                <div class="grid_3"><div class="widget_placeholder"></div></div>        
-                <div class="grid_3"><div class="widget_placeholder"></div></div>        
-                <div class="grid_3"><div class="widget_placeholder"></div></div>        
-                <div class="grid_3"><div class="widget_placeholder"></div></div>
             </div>
         </div>
     
