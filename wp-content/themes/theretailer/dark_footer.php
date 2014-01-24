@@ -20,8 +20,8 @@ global $theretailer_theme_options;
                     <img class="logo_footer" src="<?php echo get_template_directory_uri(); ?>/images/logo_footer.png" />
                     </div>
                 <div class="grid_9">
-                    <a href="" target="_blank"><img class="fb" src="<?php echo get_template_directory_uri(); ?>/images/fb.png" /></a>
-                    <a href="" target="_blank"><img class="tw" src="<?php echo get_template_directory_uri(); ?>/images/tw.png" /></a>
+                    <a href="https://www.facebook.com/bullerie" target="_blank"><img class="fb" src="<?php echo get_template_directory_uri(); ?>/images/fb.png" /></a>
+                    <a href="https://twitter.com/labullerie" target="_blank"><img class="tw" src="<?php echo get_template_directory_uri(); ?>/images/tw.png" /></a>
                 </div>
             </div>
         </div>
