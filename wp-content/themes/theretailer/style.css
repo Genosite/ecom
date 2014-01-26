@@ -1838,6 +1838,7 @@ ul.product_list_widget span.amount,
 
 #menu {
 	/* see superfish.css */
+	margin-top: 10px;
 }
 
 .gbtr_second_menu {
@@ -1877,7 +1878,7 @@ ul.product_list_widget span.amount,
 
 .gbtr_little_shopping_bag_wrapper {
 	position:absolute;
-	top:0px;
+	top:100px;
 	right:10px;
 	width:140px;
 	z-index:50;

@@ -52,7 +52,6 @@ global $theretailer_theme_options;
 <body <?php body_class(); ?>>
     
     <div id="global_wrapper">
-    <?php global $post; if ($post->ID != 48) { ?>
     <?php if ( (!$theretailer_theme_options['hide_topbar']) || ($theretailer_theme_options['hide_topbar'] == 0) ) { ?>
     <div class="gbtr_tools_wrapper">
         <div class="container_12">
@@ -101,7 +100,7 @@ global $theretailer_theme_options;
         </div>
     </div>
     <?php } ?>
-    <?php } ?>
+    
     <div class="gbtr_header_wrapper">
         <div class="container_12">
             <div class="grid_3">
@@ -112,7 +111,12 @@ global $theretailer_theme_options;
                 &nbsp;
             </div>
             <div class="grid_9" >
-            <?php global $post; if ($post->ID != 48) { ?>
+                <a href="<?php echo get_permalink('95'); ?>"><img class="menu_icon" src="<?php echo get_template_directory_uri(); ?>/images/mecenat.png" /></a>
+                <a href="<?php echo get_permalink('91'); ?>"><img class="menu_icon" src="<?php echo get_template_directory_uri(); ?>/images/editeurs.png" /></a>
+                <a href="<?php echo get_permalink('83'); ?>"><img class="menu_icon" src="<?php echo get_template_directory_uri(); ?>/images/auteurs.png" /></a>
+                <a href="<?php echo get_permalink('88'); ?>"><img class="menu_icon" src="<?php echo get_template_directory_uri(); ?>/images/lecteurs.png" /></a>
+            <?php 
+            global $post; if ($post->ID != 48) { ?>
             
                 <div class="menus_wrapper" <?php if ( ($theretailer_theme_options['catalog_mode']) && ($theretailer_theme_options['catalog_mode'] == 1) ) { ?>style="margin:0"<?php } ?>>
                     <div class="gbtr_first_menu">
@@ -340,11 +344,6 @@ global $theretailer_theme_options;
                 
                 </div>
                 
-            <?php }; if ($post->ID == 48) { ?>
-                <a href="<?php echo get_permalink('95'); ?>"><img class="menu_icon" src="<?php echo get_template_directory_uri(); ?>/images/mecenat.png" /></a>
-                <a href="<?php echo get_permalink('91'); ?>"><img class="menu_icon" src="<?php echo get_template_directory_uri(); ?>/images/editeurs.png" /></a>
-                <a href="<?php echo get_permalink('83'); ?>"><img class="menu_icon" src="<?php echo get_template_directory_uri(); ?>/images/auteurs.png" /></a>
-                <a href="<?php echo get_permalink('88'); ?>"><img class="menu_icon" src="<?php echo get_template_directory_uri(); ?>/images/lecteurs.png" /></a>
             <?php }; ?>
             </div>
             
