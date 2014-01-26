@@ -52,7 +52,7 @@ global $theretailer_theme_options;
 <body <?php body_class(); ?>>
     
     <div id="global_wrapper">
-  
+    <?php global $post; if ($post->ID != 48) { ?>
     <?php if ( (!$theretailer_theme_options['hide_topbar']) || ($theretailer_theme_options['hide_topbar'] == 0) ) { ?>
     <div class="gbtr_tools_wrapper">
         <div class="container_12">
@@ -101,7 +101,7 @@ global $theretailer_theme_options;
         </div>
     </div>
     <?php } ?>
-    
+    <?php } ?>
     <div class="gbtr_header_wrapper">
         <div class="container_12">
             <div class="grid_3">
