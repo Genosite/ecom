@@ -817,7 +817,7 @@ form input[type=submit] {
 }
 
 form input[type=submit]:hover {
-	background:#b39964;
+	background:#2D9ABB;
 }
 
 /* /FORMS */
@@ -10026,4 +10026,9 @@ footer.entry-meta .comments-link {
 	font-family: 'please_write_me_a_song' !important;
 	text-align: center;
 	margin-bottom: 15px;
+}
+
+.abo{
+	text-align: center;
+	font-family: 'please_write_me_a_song' !important;
 }
