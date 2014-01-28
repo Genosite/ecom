@@ -9996,6 +9996,7 @@ footer.entry-meta .comments-link {
 	background-color: #fff;
 	text-align: center;
 	padding-top: 5px;
+	margin-bottom: 15px;
 }
 
 @font-face {
@@ -10028,7 +10029,26 @@ footer.entry-meta .comments-link {
 	margin-bottom: 15px;
 }
 
-.abo{
+.abo {
 	text-align: center;
 	font-family: 'please_write_me_a_song' !important;
+}
+
+.button_home {
+	background-color: #2D9ABB;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	text-align: center;
+	color: white;
+	margin-left: 20px !important;
+	margin-bottom: 10px;
+	border-radius: 2px;
+}
+
+.button_home:hover {
+	background-color: #000;
+}
+
+.metaslider {
+	margin-bottom: 15px !important;
 }
