@@ -14,8 +14,8 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 <div class="empty_bag">
 
     <div class="empty_bag_icon"></div>
-    <h3 class="empty_bag_message"><?php _e('Your cart is currently empty.', 'theretailer') ?></h3>
-    <a class="empty_bag_button" href="<?php echo get_permalink(woocommerce_get_page_id('shop')); ?>"><?php _e('Return To Shop', 'theretailer') ?></a>
+    <h3 class="empty_bag_message"><?php _e('Votre panier est vide.', 'theretailer') ?></h3>
+    <a class="empty_bag_button" href="<?php echo get_permalink(woocommerce_get_page_id('shop')); ?>"><?php _e('Retournez à la boutique', 'theretailer') ?></a>
 
 </div>
 

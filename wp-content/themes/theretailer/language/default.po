@@ -1123,7 +1123,7 @@ msgstr ""
 
 #: ../woocommerce/checkout/review-order.php:31
 msgid "Cart Subtotal"
-msgstr ""
+msgstr "Montant du panier"
 
 #: ../woocommerce/checkout/review-order.php:137
 msgid "Order Total"

@@ -507,7 +507,7 @@ class WC_Sponsorship_Product {
 			if ( $complete ) {
 				$sponsorship_string = 'Completed! ';
 			}
-			$sponsorship_string .= '$' . $progress . ' / $' . $goal;
+			$sponsorship_string .= '€' . $progress . ' / €' . $goal;
 		} else {
 			$sponsorship_string = 'Cancelled';
 		}
@@ -587,15 +587,15 @@ class WC_Sponsorship_Product {
 				<div class="sp-price">
 					<div class="sp-price-col">
 						<strong><?php echo $percent; ?>%</strong>
-						funded
+						financé
 					</div>
 					<div class="sp-price-col">
-						<strong>$<?php echo $progress; ?></strong>
-						pledged
+						<strong>€<?php echo $progress; ?></strong>
+						recolté
 					</div>
 					<div class="sp-price-col">
 						<strong><?php echo $days_left; ?></strong>
-						days left
+						jours restant
 					</div>
 				</div>
 			</div>
@@ -653,7 +653,7 @@ class WC_Sponsorship_Product {
 						<div class="sp-level-title">
 							<?php echo get_the_title( $level->ID ); ?>
 							<div class="sp-level-amount">
-								<strong>$<?php echo (isset( $level_data[ '_price' ][ 0 ] ) ? $level_data[ '_price' ][ 0 ] : 0); ?></strong>
+								<strong>€<?php echo (isset( $level_data[ '_price' ][ 0 ] ) ? $level_data[ '_price' ][ 0 ] : 0); ?></strong>
 							</div>
 						</div>		
 						<div class="sp-level-description">

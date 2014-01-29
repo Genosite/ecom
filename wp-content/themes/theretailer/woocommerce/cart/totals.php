@@ -19,20 +19,20 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 
 	<?php if ( ! $woocommerce->shipping->enabled || $available_methods || ! $woocommerce->customer->get_shipping_country() || ! $woocommerce->customer->has_calculated_shipping() ) : ?>
 
-		<h3><?php _e('Shopping Bag Totals', 'theretailer'); ?></h3>
+		<h3><?php _e('Montant total du panier', 'theretailer'); ?></h3>
 
 		<table cellspacing="0">
 			<tbody>
 
 				<tr class="cart-subtotal">
-					<th><strong><?php _e( 'Subtotal', 'theretailer' ); ?></strong></th>
+					<th><strong><?php _e( 'Sous total', 'theretailer' ); ?></strong></th>
 					<td><strong><?php echo $woocommerce->cart->get_cart_subtotal(); ?></strong></td>
 				</tr>
 
 				<?php if ( $woocommerce->cart->get_discounts_before_tax() ) : ?>
 
 					<tr class="discount">
-						<th><?php _e( 'Cart Discount', 'theretailer' ); ?> <a href="<?php echo add_query_arg( 'remove_discounts', '1', $woocommerce->cart->get_cart_url() ) ?>"><?php _e( '[Remove]', 'theretailer' ); ?></a></th>
+						<th><?php _e( 'Remise', 'theretailer' ); ?> <a href="<?php echo add_query_arg( 'remove_discounts', '1', $woocommerce->cart->get_cart_url() ) ?>"><?php _e( '[Remove]', 'theretailer' ); ?></a></th>
 						<td>-<?php echo $woocommerce->cart->get_discounts_before_tax(); ?></td>
 					</tr>
 
@@ -89,7 +89,7 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 							if ( $has_compound_tax ) {
 
 								echo '<tr class="order-subtotal">
-									<th><strong>' . __( 'Subtotal', 'theretailer' ) . '</strong></th>
+									<th><strong>' . __( 'Sous Total', 'theretailer' ) . '</strong></th>
 									<td><strong>' . $woocommerce->cart->get_cart_subtotal( true ) . '</strong></td>
 								</tr>';
 							}

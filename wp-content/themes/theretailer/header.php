@@ -272,7 +272,7 @@ global $theretailer_theme_options;
                 
                         <div class="gbtr_little_shopping_bag_wrapper">
                             <div class="gbtr_little_shopping_bag">
-                                <div class="title"><a href="<?php echo esc_url( $woocommerce->cart->get_cart_url() ); ?>"><?php _e('Shopping Bag', 'theretailer'); ?></a></div>
+                                <div class="title"><a href="<?php echo esc_url( $woocommerce->cart->get_cart_url() ); ?>"><?php _e('Panier', 'theretailer'); ?></a></div>
                                 <div class="overview"><?php echo $woocommerce->cart->get_cart_total(); ?> <span class="minicart_items">/ <?php echo $woocommerce->cart->cart_contents_count; ?> <?php _e('item(s)', 'theretailer'); ?></span></div>
                             </div>
                             <div class="gbtr_minicart_wrapper">
@@ -300,7 +300,7 @@ global $theretailer_theme_options;
                                     ?>
                                             
                                     <div class="minicart_total_checkout">                                        
-                                        <?php _e('Cart subtotal', 'theretailer'); ?><span><?php echo $woocommerce->cart->get_cart_total(); ?></span>                                   
+                                        <?php _e('Montant du panier', 'theretailer'); ?><span><?php echo $woocommerce->cart->get_cart_total(); ?></span>                                   
                                     </div>
                                     
                                     <a href="<?php echo esc_url( $woocommerce->cart->get_cart_url() ); ?>" class="button gbtr_minicart_cart_but"><?php _e('View Shopping Bag', 'theretailer'); ?></a>   

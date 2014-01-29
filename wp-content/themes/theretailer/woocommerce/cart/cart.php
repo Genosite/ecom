@@ -10,7 +10,7 @@
 global $woocommerce;
 ?>
 
-<em class="items_found_cart"><?php echo sprintf(_n('%d item', '%d items', $woocommerce->cart->cart_contents_count, 'theretailer'), $woocommerce->cart->cart_contents_count);?> <?php _e('found', 'theretailer'); ?></em>
+<em class="items_found_cart"><?php echo sprintf(_n('%d produit', '%d produits', $woocommerce->cart->cart_contents_count, 'theretailer'), $woocommerce->cart->cart_contents_count);?> <?php _e('trouvé', 'theretailer'); ?></em>
 
 <hr />
 
@@ -31,8 +31,8 @@ global $woocommerce;
                     <tr>
                         <th class="product-remove">&nbsp;</th>
                         <th data-hide="phone" class="product-thumbnail">&nbsp;</th>
-                        <th class="product-name"><?php _e('Item', 'theretailer'); ?></th>
-                        <th data-hide="phone" class="product-quantity"><?php _e('Quantity', 'theretailer'); ?></th>
+                        <th class="product-name"><?php _e('Produit', 'theretailer'); ?></th>
+                        <th data-hide="phone" class="product-quantity"><?php _e('Quantité', 'theretailer'); ?></th>
                         <th class="product-subtotal"><?php _e('Total', 'theretailer'); ?></th>
                     </tr>
                 </thead>
@@ -138,10 +138,10 @@ global $woocommerce;
             <?php if ( $woocommerce->cart->coupons_enabled() ) { ?>
                 <div class="coupon">
 
-                    <h3><?php _e('Have a coupon?', 'theretailer'); ?></h3>
+                    <h3><?php _e('Vous avez un code de réduction ?', 'theretailer'); ?></h3>
                     <div class="coupon_inputs_wrapper">
-                        <input name="coupon_code" class="input-text" id="coupon_code" placeholder="<?php _e('Enter coupon code', 'theretailer'); ?>" value="" />
-                        <input type="submit" class="button button-coupon" name="apply_coupon" value="<?php _e('Apply', 'theretailer'); ?>" />
+                        <input name="coupon_code" class="input-text" id="coupon_code" placeholder="<?php _e('Entrer le code', 'theretailer'); ?>" value="" />
+                        <input type="submit" class="button button-coupon" name="apply_coupon" value="<?php _e('Valider', 'theretailer'); ?>" />
                     </div>
     
                     <?php do_action('woocommerce_cart_coupon'); ?>
@@ -157,9 +157,9 @@ global $woocommerce;
             
             <div class="gbtr_left_column_cart_sep"></div>
             
-            <input type="submit" class="update-button button" name="update_cart" value="<?php _e('Update Shopping Bag', 'theretailer'); ?>" />
+            <input type="submit" class="update-button button" name="update_cart" value="<?php _e('Mettre à jour le panier', 'theretailer'); ?>" />
                         
-            <input type="submit" class="checkout-button button" name="proceed" value="<?php _e('Proceed to Checkout', 'theretailer'); ?>" />
+            <input type="submit" class="checkout-button button" name="proceed" value="<?php _e('Terminer votre commande', 'theretailer'); ?>" />
     
             <?php do_action('woocommerce_proceed_to_checkout'); ?>
     

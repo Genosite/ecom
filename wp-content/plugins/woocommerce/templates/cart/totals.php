@@ -25,7 +25,7 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 			<tbody>
 
 				<tr class="cart-subtotal">
-					<th><strong><?php _e( 'Cart Subtotal', 'woocommerce' ); ?></strong></th>
+					<th><strong><?php _e( 'Montant du panier', 'woocommerce' ); ?></strong></th>
 					<td><strong><?php echo $woocommerce->cart->get_cart_subtotal(); ?></strong></td>
 				</tr>
 

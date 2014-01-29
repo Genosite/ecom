@@ -946,7 +946,7 @@ class WC_Order {
 
 		if ( $subtotal = $this->get_subtotal_to_display() )
 			$total_rows['cart_subtotal'] = array(
-				'label' => __( 'Cart Subtotal:', 'woocommerce' ),
+				'label' => __( 'Montant du panier:', 'woocommerce' ),
 				'value'	=> $subtotal
 			);
 
