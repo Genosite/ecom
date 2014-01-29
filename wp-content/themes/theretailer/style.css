@@ -10024,11 +10024,12 @@ footer.entry-meta .comments-link {
 }
 
 .title_head {
-	font-size: 18px;
-	/*font-family: 'please_write_me_a_song' !important;*/
-	text-align: center;
+	font-size: 16px;
+	border: solid #999ea0 1px;
+	background-color: #2787A0;
+	text-align: left;
 	margin-bottom: 15px;
-	color: #000;
+	color: #fff;
 	line-height: 1.2em !important;
 }
 
