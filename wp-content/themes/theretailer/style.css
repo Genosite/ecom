@@ -691,7 +691,7 @@ blockquote:before {
 /* UI */
 
 #global_wrapper {
-	background-color:#f4f4f4;
+	background-color:#f5f0eb;
 }
 
 .big_arrow_left:hover{
@@ -9996,7 +9996,8 @@ footer.entry-meta .comments-link {
 	background-color: #fff;
 	text-align: center;
 	padding-top: 5px;
-	margin-bottom: 15px;
+	margin-bottom: 25px;
+	margin-top: 25px;
 }
 
 @font-face {
@@ -10023,10 +10024,24 @@ footer.entry-meta .comments-link {
 }
 
 .title_head {
-	font-size: 36px;
-	font-family: 'please_write_me_a_song' !important;
+	font-size: 18px;
+	/*font-family: 'please_write_me_a_song' !important;*/
 	text-align: center;
 	margin-bottom: 15px;
+	color: #000;
+	line-height: 1.2em !important;
+}
+
+.title_head div {
+	padding: 15px;
+}
+
+.title_head2 {
+	font-size: 46px;
+	font-family: 'please_write_me_a_song' !important;
+	text-align: center;
+	margin-bottom: 25px !important;
+	color: #2787A0;
 }
 
 .abo {
@@ -10041,7 +10056,6 @@ footer.entry-meta .comments-link {
 	text-align: center;
 	color: white;
 	margin-left: 20px !important;
-	margin-bottom: 10px;
 	border-radius: 2px;
 }
 
@@ -10050,5 +10064,5 @@ footer.entry-meta .comments-link {
 }
 
 .metaslider {
-	margin-bottom: 15px !important;
+	margin-bottom: 20px !important;
 }
