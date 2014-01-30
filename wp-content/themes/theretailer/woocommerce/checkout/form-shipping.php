@@ -24,14 +24,13 @@ global $woocommerce;
 
 		endif;
 	?>
-
-	<h3 class="gbtr_shipping_address_header accordion_header"><?php _e('Shipping Address', 'theretailer'); ?></h3>
+	<h3 class="gbtr_shipping_address_header accordion_header"><?php _e('Adresse de facturation', 'theretailer'); ?></h3>
     
     <div class="gbtr_shipping_address_content accordion_content">
     
         <p class="form-row" id="shiptobilling">
             <input id="shiptobilling-checkbox" class="input-checkbox" <?php checked($shiptobilling, 1); ?> type="checkbox" name="shiptobilling" value="1" />
-            <label for="shiptobilling-checkbox" class="checkbox"><?php _e('Ship to billing address?', 'theretailer'); ?></label>
+            <label for="shiptobilling-checkbox" class="checkbox"><?php _e('Expédier à l\'adresse de facturation?', 'theretailer'); ?></label>
         </p>
     
         <div class="shipping_address">
@@ -58,7 +57,7 @@ global $woocommerce;
 
 	<?php if ($woocommerce->cart->ship_to_billing_address_only()) : ?>
 
-		<h3 class="gbtr_additional_information_header accordion_header"><?php _e('Additional Information', 'theretailer'); ?></h3>
+		<h3 class="gbtr_additional_information_header accordion_header"><?php _e('Informations complémentaires', 'theretailer'); ?></h3>
 
 	<?php endif; ?>
     
@@ -72,7 +71,7 @@ global $woocommerce;
         
         <div class="clr"></div>
             
-        <input type="button" class="button_shipping_address_continue button" name="button_create_account_continue" value="<?php _e('Continue &raquo;', 'theretailer'); ?>" />
+        <input type="button" class="button_shipping_address_continue button" name="button_create_account_continue" value="<?php _e('Continuer &raquo;', 'theretailer'); ?>" />
         
         <div class="clr"></div>
     

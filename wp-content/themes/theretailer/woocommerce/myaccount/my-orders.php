@@ -67,7 +67,7 @@ $customer_orders = get_posts($args);
     
     <div class="grid_8 omega">
     
-		<h2><?php _e('Recent Orders', 'theretailer'); ?></h2>
+		<h2><?php _e('Dernières commandes', 'theretailer'); ?></h2>
 		
 		<?php
         if ($customer_orders) :
@@ -76,11 +76,11 @@ $customer_orders = get_posts($args);
         
                 <thead>
                     <tr>
-                        <th class="order-number"><span class="nobr"><?php _e('Order', 'theretailer'); ?></span></th>
+                        <th class="order-number"><span class="nobr"><?php _e('Commande', 'theretailer'); ?></span></th>
                         <th data-hide="phone" class="order-shipto"><span class="nobr"><?php _e('Ship to', 'theretailer'); ?></span></th>
                         <th class="order-total"><span class="nobr"><?php _e('Total', 'theretailer'); ?></span></th>
                         <th data-hide="phone" class="order-status"><span class="nobr"><?php _e('Status', 'theretailer'); ?></span></th>
-                        <th class="order-details"><span class="nobr"><?php _e('Details', 'theretailer'); ?></span></th>
+                        <th class="order-details"><span class="nobr"><?php _e('Détail', 'theretailer'); ?></span></th>
                     </tr>
                 </thead>
         
@@ -101,7 +101,7 @@ $customer_orders = get_posts($args);
                             <td class="order-status">
                                 <?php echo ucfirst( __( $status->name, 'theretailer' ) ); ?>
                                 <?php if (in_array($order->status, array('pending', 'failed'))) : ?>
-                                    <a href="<?php echo esc_url( $order->get_cancel_order_url() ); ?>" class="cancel" title="<?php _e('Click to cancel this order', 'theretailer'); ?>">(<?php _e('Cancel', 'theretailer'); ?>)</a>
+                                    <a href="<?php echo esc_url( $order->get_cancel_order_url() ); ?>" class="cancel" title="<?php _e('Cliquer pour annuler votre commande.', 'theretailer'); ?>">(<?php _e('Annuler', 'theretailer'); ?>)</a>
                                 <?php endif; ?>
                             </td>
                             <td class="order-actions">
@@ -110,7 +110,7 @@ $customer_orders = get_posts($args);
                                     <a href="<?php echo esc_url( $order->get_checkout_payment_url() ); ?>"><?php _e('Pay', 'theretailer'); ?></a>
                                 <?php endif; ?>
         
-                                <a href="<?php echo esc_url( add_query_arg('order', $order->id, get_permalink(woocommerce_get_page_id('view_order'))) ); ?>"><?php _e('View', 'theretailer'); ?></a>
+                                <a href="<?php echo esc_url( add_query_arg('order', $order->id, get_permalink(woocommerce_get_page_id('view_order'))) ); ?>"><?php _e('Voir', 'theretailer'); ?></a>
         
         
                             </td>
@@ -122,7 +122,7 @@ $customer_orders = get_posts($args);
         <?php
         else :
         ?>
-            <p class="gbtr_no_recent_orders"><?php _e('You have no recent orders.', 'theretailer'); ?></p>
+            <p class="gbtr_no_recent_orders"><?php _e('Vous n\'avez rien commandé', 'theretailer'); ?></p>
         <?php
         endif;
         ?>

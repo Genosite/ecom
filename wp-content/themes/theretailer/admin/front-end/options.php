@@ -40,7 +40,7 @@
 			<img style="display:none" src="<?php echo ADMIN_DIR; ?>assets/images/loading-bottom.gif" class="ajax-loading-img ajax-loading-img-bottom" alt="Working..." />
 
 			<button id="of_save" type="button" class="button-primary">
-				<?php _e('Save All Changes', 'theretailer');?>
+				<?php _e('Sauvegarder tous les changements', 'theretailer');?>
 			</button>
 			
 		</div><!--.info_bar--> 	

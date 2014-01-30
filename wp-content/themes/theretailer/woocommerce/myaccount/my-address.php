@@ -43,8 +43,8 @@ $customer_id = get_current_user_id();
     
     <div class="grid_8 omega">
 
-		<h2><?php _e('My Address', 'theretailer'); ?></h2>
-        <p class="myaccount_address"><?php _e('The following addresses will be used on the checkout page by default.', 'theretailer'); ?></p>
+		<h2><?php _e('Mes adresses', 'theretailer'); ?></h2>
+        <p class="myaccount_address"><?php _e('Les adresses ci-dessous seront utlisée par defaut lors de vos achats.', 'theretailer'); ?></p>
 		
 		<?php if (get_option('woocommerce_ship_to_billing_address_only')=='no') : ?>
         
@@ -55,7 +55,7 @@ $customer_id = get_current_user_id();
         <?php endif; ?>
         
                     <header class="title">
-                        <h3><?php _e('Billing Address', 'theretailer'); ?></h3>
+                        <h3><?php _e('Adresse de facturation', 'theretailer'); ?></h3>
                     </header>
                     <div class="small_sep"></div>
                     <br />
@@ -90,7 +90,7 @@ $customer_id = get_current_user_id();
                 <div class="col-2">
         
                     <header class="title">
-                        <h3><?php _e('Shipping Address', 'theretailer'); ?></h3>
+                        <h3><?php _e('Adresse de livraison', 'theretailer'); ?></h3>
                     </header>
                     <div class="small_sep"></div>
                     <br />
@@ -110,7 +110,7 @@ $customer_id = get_current_user_id();
         
                             $formatted_address = $woocommerce->countries->get_formatted_address( $address );
         
-                            if (!$formatted_address) _e('You have not set up a shipping address yet.', 'theretailer'); else echo $formatted_address;
+                            if (!$formatted_address) _e('Vous n\'avez pas encore renseigné votre adresse de livraison.', 'theretailer'); else echo $formatted_address;
                         ?>
                     </address>
                     <br />

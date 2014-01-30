@@ -10,7 +10,7 @@
 global $woocommerce;
 ?>
 
-<p class="myaccount_user"><?php printf( __('<span>Hello %s.</span>From your account dashboard you can view your recent orders, manage your shipping and billing addresses and <a href="%s">change your password</a>.', 'theretailer'), $current_user->display_name, get_permalink(woocommerce_get_page_id('change_password'))); ?></p>
+<p class="myaccount_user"><?php printf( __('<span>Bienvenue %s.</span>Depuis votre dashboard vous pouvez voir vos dernières commandes, modifier vos information de livraison et changer <a href="%s">votre mot de passe</a>.', 'theretailer'), $current_user->display_name, get_permalink(woocommerce_get_page_id('change_password'))); ?></p>
 
 <?php $woocommerce->show_messages(); ?>
 
@@ -39,7 +39,7 @@ global $woocommerce;
                         ));
                         ?>
                         <?php else: ?>
-                            Define your account navigation.
+                            Définissez votre compte de navigation.
                         <?php endif; ?>
                     </ul>
             
@@ -53,7 +53,7 @@ global $woocommerce;
             
             <?php if ($downloads = $woocommerce->customer->get_downloadable_products()) : ?>
             <div class="grid_8 omega">
-                <h2><?php _e('Available downloads', 'theretailer'); ?></h2>
+                <h2><?php _e('Téléchargement disponible.', 'theretailer'); ?></h2>
                 <ul class="digital-downloads">
                     <?php foreach ($downloads as $download) : ?>
                         <li><?php if (is_numeric($download['downloads_remaining'])) : ?><span class="count"><?php echo $download['downloads_remaining'] . _n('&nbsp;download remaining', '&nbsp;downloads remaining', $download['downloads_remaining'], 'theretailer'); ?></span><?php endif; ?> <a href="<?php echo esc_url( $download['download_url'] ); ?>"><?php echo $download['download_name']; ?></a></li>

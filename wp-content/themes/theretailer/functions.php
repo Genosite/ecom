@@ -1872,7 +1872,7 @@ if (!function_exists('woocommerceframework_header_add_to_cart_fragment')) {
             <div class="gbtr_little_shopping_bag_wrapper">
                 <div class="gbtr_little_shopping_bag">
                     <div class="title"><a href="<?php echo esc_url( $woocommerce->cart->get_cart_url() ); ?>"><?php _e('Panier', 'theretailer'); ?></a></div>
-                    <div class="overview"><?php echo $woocommerce->cart->get_cart_total(); ?> <span class="minicart_items">/ <?php echo $woocommerce->cart->cart_contents_count; ?> <?php _e('item(s)', 'theretailer'); ?></span></div>
+                    <div class="overview"><?php echo $woocommerce->cart->get_cart_total(); ?> <span class="minicart_items">/ <?php echo $woocommerce->cart->cart_contents_count; ?> <?php _e('produit(s)', 'theretailer'); ?></span></div>
                 </div>
                 <div class="gbtr_minicart_wrapper">
                     <div class="gbtr_minicart">
@@ -1890,7 +1890,7 @@ if (!function_exists('woocommerceframework_header_add_to_cart_fragment')) {
                                         echo '<a href="'.get_permalink($cart_item['product_id']).'">' . apply_filters('woocommerce_cart_widget_product_title', $gbtr_product_title, $_product) . '</a>';
                                         echo '<div class="cart_list_product_quantity">'.__('Quantity:', 'theretailer').' '.$cart_item['quantity'].'</div>';
                                     echo '</div>';
-                                    echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf('<a href="%s" class="remove" title="%s">&times;</a>', esc_url( $woocommerce->cart->get_remove_url( $cart_item_key ) ), __('Remove this item', 'theretailer') ), $cart_item_key );
+                                    echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf('<a href="%s" class="remove" title="%s">&times;</a>', esc_url( $woocommerce->cart->get_remove_url( $cart_item_key ) ), __('Supprimer l\'article', 'theretailer') ), $cart_item_key );
                                     echo '<div class="cart_list_product_price">'.woocommerce_price($_product->get_price()).'</div>';
                                     echo '<div class="clr"></div>';                                                
                                 echo '</li>';                                         
@@ -1902,12 +1902,12 @@ if (!function_exists('woocommerceframework_header_add_to_cart_fragment')) {
                             <?php _e('Montant du panier', 'theretailer'); ?><span><?php echo $woocommerce->cart->get_cart_total(); ?></span>                                   
                         </div>
                         
-                        <a href="<?php echo esc_url( $woocommerce->cart->get_cart_url() ); ?>" class="button gbtr_minicart_cart_but"><?php _e('View Shopping Bag', 'theretailer'); ?></a>   
+                        <a href="<?php echo esc_url( $woocommerce->cart->get_cart_url() ); ?>" class="button gbtr_minicart_cart_but"><?php _e('Voir le panier', 'theretailer'); ?></a>   
                         
-                        <a href="<?php echo esc_url( $woocommerce->cart->get_checkout_url() ); ?>" class="button gbtr_minicart_checkout_but"><?php _e('Proceed to Checkout', 'theretailer'); ?></a>
+                        <a href="<?php echo esc_url( $woocommerce->cart->get_checkout_url() ); ?>" class="button gbtr_minicart_checkout_but"><?php _e('Passer la commande', 'theretailer'); ?></a>
                         
                         <?php                                        
-                        else: echo '<li class="empty">'.__('No products in the cart.','theretailer').'</li>'; endif;                                    
+                        else: echo '<li class="empty">'.__('Pas de produit dans le panier.','theretailer').'</li>'; endif;                                    
                     echo '</ul>';                                    
                     ?>                                                                        
     
