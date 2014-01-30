@@ -12,11 +12,7 @@ global $theretailer_theme_options;
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-    <header class="entry-header">
-		<?php if (!is_front_page()) : ?>
-		<h1 class="entry-title"><?php the_title(); ?></h1>
-        <?php endif ?>        
-	</header><!-- .entry-header -->
+    
 
 	<?php if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it. ?>
         <div class="entry-thumbnail">

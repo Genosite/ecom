@@ -111,10 +111,10 @@ global $theretailer_theme_options;
                 &nbsp;
             </div>
             <div class="grid_9" >
-                <a href="<?php echo get_permalink('95'); ?>"><img class="menu_icon" src="<?php echo get_template_directory_uri(); ?>/images/mecenat.png" /></a>
-                <a href="<?php echo get_permalink('91'); ?>"><img class="menu_icon" src="<?php echo get_template_directory_uri(); ?>/images/editeurs.png" /></a>
-                <a href="<?php echo get_permalink('83'); ?>"><img class="menu_icon" src="<?php echo get_template_directory_uri(); ?>/images/auteurs.png" /></a>
-                <a href="<?php echo get_permalink('88'); ?>"><img class="menu_icon" src="<?php echo get_template_directory_uri(); ?>/images/lecteurs.png" /></a>
+                <a href="<?php echo get_permalink('95'); ?>"><img class="menu_icon" src="<?php echo get_template_directory_uri(); ?>/images/mecenat.png" onmouseover="this.src='<?php echo get_template_directory_uri(); ?>/images/mecenat2.png'" onmouseout="this.src='<?php echo get_template_directory_uri(); ?>/images/mecenat.png'"/></a>
+                <a href="<?php echo get_permalink('91'); ?>"><img class="menu_icon" src="<?php echo get_template_directory_uri(); ?>/images/editeurs.png" onmouseover="this.src='<?php echo get_template_directory_uri(); ?>/images/editeurs2.png'" onmouseout="this.src='<?php echo get_template_directory_uri(); ?>/images/editeurs.png'"/></a>
+                <a href="<?php echo get_permalink('83'); ?>"><img class="menu_icon" src="<?php echo get_template_directory_uri(); ?>/images/auteurs.png" onmouseover="this.src='<?php echo get_template_directory_uri(); ?>/images/auteurs2.png'" onmouseout="this.src='<?php echo get_template_directory_uri(); ?>/images/auteurs.png'"/></a>
+                <a href="<?php echo get_permalink('88'); ?>"><img class="menu_icon" src="<?php echo get_template_directory_uri(); ?>/images/lecteurs.png" onmouseover="this.src='<?php echo get_template_directory_uri(); ?>/images/lecteurs2.png'" onmouseout="this.src='<?php echo get_template_directory_uri(); ?>/images/lecteurs.png'"/></a>
             <?php 
             global $post; if ($post->ID != 48) { ?>
             
