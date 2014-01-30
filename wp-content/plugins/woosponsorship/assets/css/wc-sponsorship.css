@@ -8,9 +8,9 @@ body #wrapper #content .products .product .button.add_to_cart_button.product_typ
 }
 
 .sp-progress-bar {
-	height: 8px;
+	height: 15px;
 	border: 1px solid #aaaaaa;
-	margin: 8px 4px;
+	margin: 8px 0px;
 	width: auto;
 	border-radius: 4px;
 	-moz-border-radius: 4px;

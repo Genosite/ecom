@@ -157,29 +157,7 @@ global $theretailer_theme_options;
                             <div class="clr"></div>
                         </div>
                     </div>
-                    <div class="gbtr_second_menu">
-                        <ul>
-                            <?php if ( has_nav_menu( 'secondary' ) ) : ?>
-							<?php  
-                            wp_nav_menu(array(
-                                'theme_location' => 'secondary',
-                                'container' =>false,
-                                'menu_class' => '',
-                                'echo' => true,
-                                'items_wrap'      => '%3$s',
-                                'before' => '',
-                                'after' => '',
-                                'link_before' => '',
-                                'link_after' => '',
-                                'depth' => 0,
-                                'fallback_cb' => false,
-                            ));
-                            ?>
-                            <?php else: ?>
-                            	Define your secondary navigation.
-                            <?php endif; ?>
-                        </ul>
-                    </div>
+                    
                 </div>
                 
                 <div class="mobiles_menus_wrapper">
