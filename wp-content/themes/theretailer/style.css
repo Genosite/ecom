@@ -692,6 +692,7 @@ blockquote:before {
 
 #global_wrapper {
 	background-color:#f5f0eb;
+	background-image: url(images/arches.png);
 }
 
 .big_arrow_left:hover{
