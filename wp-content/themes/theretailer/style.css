@@ -10016,6 +10016,19 @@ footer.entry-meta .comments-link {
 	font-family: 'please_write_me_a_song' !important;
 }
 
+.title_header2 {
+	border: solid #999ea0 1px;
+	background-color: #fff;
+	text-align: center;
+	padding-top: 5px;
+	margin-bottom: 25px;
+}
+
+.title_header2 span {
+	font-size: 28px;
+	font-family: 'please_write_me_a_song' !important;
+}
+
 .fb {
 	float: left;
 	margin-top: 6px;
@@ -10066,6 +10079,32 @@ footer.entry-meta .comments-link {
 
 .button_home:hover {
 	background-color: #000;
+}
+
+.button_home:active {
+	background-color: #2787A0;
+}
+
+.button_formu {
+	background-color: #2D9ABB;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: white;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 2px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.button_formu:hover {
+	background-color: #000;
+}
+
+.button_formu:active {
+	background-color: #2787A0;
 }
 
 .metaslider {
