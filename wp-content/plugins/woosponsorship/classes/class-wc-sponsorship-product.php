@@ -595,14 +595,14 @@ class WC_Sponsorship_Product {
 					</div>
 					<div class="sp-price-col">
 						<strong><?php echo $days_left; ?></strong>
-						jours restant
+						jrs restant
 					</div>
 				</div>
 			</div>
 			<?php
 			$price_html .= ob_get_clean();
 		} else {
-			$price_html .= '<em>Project not set up...</em>';
+			$price_html .= '<em>Ca arrive bientôt !</em>';
 		}
 		$price_html .= '</div>';
 
