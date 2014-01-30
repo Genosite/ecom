@@ -10063,6 +10063,20 @@ footer.entry-meta .comments-link {
 	color: #2787A0;
 }
 
+.title_head3 {
+	font-size: 16px;
+	border: solid #999ea0 1px;
+	background-color: #373838;
+	text-align: left;
+	margin-bottom: 15px;
+	color: #fff;
+	line-height: 1.2em !important;
+}
+
+.title_head3 div {
+	padding: 15px;
+}
+
 .abo {
 	text-align: center;
 	font-family: 'please_write_me_a_song' !important;
